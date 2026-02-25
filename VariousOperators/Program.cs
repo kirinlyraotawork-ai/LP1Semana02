@@ -13,6 +13,7 @@ namespace VariousOperators
             Console.WriteLine($"{n<<3}");
             Console.WriteLine($"{n^6}");
             Console.WriteLine($"{n>10}");
+        
         }
     }
 }
