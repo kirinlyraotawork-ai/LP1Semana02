@@ -7,26 +7,35 @@ namespace TempConvert
     {
         private static void Main(string[] args)
         {
-            string question, response; 
+            string question_1, response, question_2; 
             CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
-            Console.Write("Temperature:");
+
+            Console.Write("Temperature: ");
             string temp_1 = Console.ReadLine();
-            Console.Write("Unit(C/F):");
-            question = Console.ReadLine();
-            switch (question)
+
+            Console.Write("Unit(C/F): ");
+            question_1 = Console.ReadLine();
+
+            float conversion = Convert.ToSingle(temp_1);
+            string a_1 = $"{conversion * 1.8 + 32:f2}";
+            string a_2 = $"{(conversion-32)/1.8:f2}";
+            
+            switch (question_1)
             {
                 case "C":
-                    response = "...C = ...F";
+                    response = $"{conversion:f2} C = {a_1:f2} F";
                     break;
                 case "F":
-                    response = " ...F = ...C";
+                    response = $"{conversion:f2} F = {a_2:f2} C";
                     break;
                 default:
-                    response = "I didn't understand you. Can you please repeat";
+                    response = "Invalid unit.";
                     break;
             
         }
         Console.WriteLine(response);
+
+        
     }
     }
 }
