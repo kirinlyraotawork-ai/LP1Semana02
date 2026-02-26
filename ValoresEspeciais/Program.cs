@@ -42,6 +42,10 @@ namespace ValoresEspeciais
             Console.WriteLine($"\n{float_max}");
             float_max++;
             Console.WriteLine($"{float_max}");
+            float float_max_2 = float.MaxValue;
+            Console.WriteLine($"\n{float_max_2}");
+            float_max_2*=2;
+            Console.WriteLine($"{float_max_2}");
 
             
 
