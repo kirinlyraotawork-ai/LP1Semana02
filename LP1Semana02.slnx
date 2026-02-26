@@ -2,6 +2,7 @@
   <Project Path="ChatGPTZero/ChatGPTZero.csproj" />
   <Project Path="Cilindro/Cilindro.csproj" />
   <Project Path="SmoothOperator/SmoothOperator.csproj" />
+  <Project Path="TempConvert/TempConvert.csproj" />
   <Project Path="ValoresEspeciais/ValoresEspeciais.csproj" />
   <Project Path="VariousOperators/VariousOperators.csproj" />
 </Solution>
