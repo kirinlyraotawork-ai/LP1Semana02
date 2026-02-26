@@ -32,6 +32,21 @@ namespace ValoresEspeciais
             Console.WriteLine($"{double.PositiveInfinity}");
             Console.WriteLine($"{double.NegativeInfinity}");
             Console.WriteLine($"{double.NaN}");
+
+            uint uint_max = uint.MaxValue;
+            Console.WriteLine($"\n{uint_max}");
+            uint_max++;
+            Console.WriteLine($"{uint_max}");
+
+            float float_max = float.MaxValue;
+            Console.WriteLine($"\n{float_max}");
+            float_max++;
+            Console.WriteLine($"{float_max}");
+
+            
+
+            
+
         }
     }
 }
